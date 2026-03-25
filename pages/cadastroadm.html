@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoVida - Sign In - ADM</title>
+    <title>EcoVida - Sign Up - ADM</title>
     <link rel="stylesheet" href="../css/style.css">
     
 </head>
@@ -14,25 +14,25 @@
 
         <div class="inputs">
             <label>Nome de Usuário</label>
-            <input id="nomeAdm" autocomplete="off" type="text">
+            <input id="nomeAdm" autocomplete="off" autocapitalize="off" autocorrect="off" type="text" required>
         </div>
 
         <div class="inputs">
             <label>E-Mail da Empresa</label>
-            <input id="emailAdm" autocomplete="off" type="email">
+            <input id="emailAdm" autocomplete="off" autocapitalize="off" autocorrect="off" type="email" required>
         </div>
 
         <div class="inputs">
             <label>Senha</label>
-            <input id="passwdAdm" autocomplete="off" type="password">
+            <input id="passwdAdm" autocomplete="off" autocapitalize="off" autocorrect="off" type="password" required>
         </div>
 
         <div class="inputs">
             <label>CPF</label>
-            <input id="cpfAdm" autocomplete="off" type="text">
+            <input id="cpfAdm" autocomplete="off" autocapitalize="off" autocorrect="off" type="text" required>
         </div>
 
-        <button>Cadastrar-se</button>
+        <button type="button" style="cursor: pointer;" id="btnCadastro">Cadastrar-se</button>
 
         <div style="display: flex; gap: 25px;">
             <a style="color: #0000ff;" href="login.html">Já possui uma conta?</a>
@@ -43,6 +43,8 @@
     <footer style="margin-top: 35px;">
         <p style="font-size: 1.1rem; font-style: italic; color: #89b289; font-weight: 500;">EcoVida™ - Uma Vida Bem Ecológica</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/cadastroadm.js"></script>
 </body>
 </html>

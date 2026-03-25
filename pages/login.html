@@ -14,17 +14,15 @@
 
         <div class="inputs">
             <label>E-Mail</label>
-            <input id="emailLogin" autocomplete="off" type="email">
+            <input id="emailLogin" autocomplete="off" autocapitalize="off" autocorrect="off" type="email">
         </div>
 
         <div class="inputs">
             <label>Senha</label>
-            <input id="passwdLogin" autocomplete="off" type="password">
+            <input id="passwdLogin" autocomplete="off" autocapitalize="off" autocorrect="off" type="password">
         </div>
 
-        <a href="home.html" style="display: flex; justify-content: center; width: 100%;">
-            <button class="botao">Entrar</button>
-        </a>
+        <button type="button" style="cursor: pointer;" id="btnLogin" class="botao">Entrar</button>        
 
         <div style="display: flex; gap: 25px;">
             <a style="color: #0000ff;" href="../index.html">Não possui uma conta?</a>
@@ -34,6 +32,8 @@
     <footer style="margin-top: 105px;">
         <p style="font-size: 1.1rem; font-style: italic; color: #89b289; font-weight: 500;">EcoVida™ - Uma Vida Bem Ecológica</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/login.js"></script>
 </body>
 </html>
