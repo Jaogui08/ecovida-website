@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #789c78;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px #000000 solid;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #e6f5e6;
+    border-radius: 5px;
+    gap: 1px;
+    width: 350px;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.actions button{
+    border: none;
+    background: transparent;
+}
+.actions img{
+    width: 40px;
+}
+
+/* DAQUI PARA CIMA É A NAV GLOBAL PARA TODAS AS PÁGINAS */
+
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product{
+    margin-top: 50px;
+    background-color: #ffffff;
+    width: 70%;
+    border-radius: 10px;
+    border: 1px #000000 solid;
+    padding: 40px;
+    padding-inline: 80px;
+    display: flex;
+    gap: 120px;
+}
+.price{
+    background-color: #eff5ef;
+    color: #678567;
+    font-size: 1.5rem;
+    padding: 15px;
+    width: 600px;
+    border: 1px #000000 solid;
+    border-radius: 10px;
+}
+
+.quantity{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.quantityButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px #000000 solid;
+    
+}
+.quantityButton button{
+    border: none;
+    background-color: #ddf2dd;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    padding-inline: 25px;
+    background-color: #ddf2dd;
+    border: none;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.productDescription{
+    width: 70%;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px #000000 solid;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.detailTitle{
+    background-color: #ddf2dd;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px #000000 solid;
+    margin-bottom: 20px;
+}
+
+.details{
+    padding: 20px;
+    padding-inline: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.detailDiv{
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    font-size: 1.3rem;
+}
+
+/* DAQUI PARA BAIXO É O FOOTER GLOBAL PARA TODAS AS PÁGINAS */
+
+footer{
+    background-color: #678567;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialMedias{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.socialMedias img{
+    width: 90px;
+}
+.contact{
+    color: #334233;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.contact img{
+    width: 30px;
+}
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #789c78;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px #000000 solid;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #e6f5e6;
+    border-radius: 5px;
+    gap: 1px;
+    width: 350px;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.actions button{
+    border: none;
+    background: transparent;
+}
+.actions img{
+    width: 40px;
+}
+
+/* DAQUI PARA CIMA É A NAV GLOBAL PARA TODAS AS PÁGINAS */
+
+.title{
+    margin-top: 40px;
+    padding-inline: 90px;
+    margin-bottom: 50px;
+}
+.filterContainer{
+    padding-inline: 120px;
+    display: flex;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(5, 300px);
+    justify-content: space-between;
+    padding-inline: 95px;
+    margin-bottom: 40px;
+}
+.products-container a{
+    text-decoration: none;
+    color: #000000;
+}
+.product{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px #000000 solid;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.price h2{
+    height: 70px;
+    font-weight: 400;
+}
+.price p{
+    font-size: 25px;
+    color: #678567;
+    font-weight: 700;
+}
+
+/* DAQUI PARA BAIXO É O FOOTER GLOBAL PARA TODAS AS PÁGINAS */
+
+footer{
+    background-color: #678567;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialMedias{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.socialMedias img{
+    width: 90px;
+}
+.contact{
+    color: #334233;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.contact img{
+    width: 30px;
+}
+.phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
