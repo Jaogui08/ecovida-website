@@ -50,89 +50,92 @@ nav{
 
 /* DAQUI PARA CIMA É A NAV GLOBAL PARA TODAS AS PÁGINAS */
 
-.cartContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+section{
     flex: 1;
-}
-.cartTitle{
-    background-color: #ddf2dd;
-    height: 80px;
-    width: 80%;
-    margin-top: 80px;
-    border: 1px #000000 solid;
-    border-radius: 10px;
-    padding-inline: 20px;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 3fr 1fr 1fr 1fr auto;
-    justify-content: space-between;
-}
-
-.cartProduct{
-    background-color: #ffffff;
-    display: grid;
-    width: 100%;
-    grid-template-columns: 3fr 1fr 1fr 1fr auto;
-    padding: 25px;
-    align-items: center;
-    border: 1px #000000 solid;
-    border-radius: 10px;
-    margin-top: 40px;
-}
-
-.productValue{
-    font-style: italic;
-    color: #678567;
-    font-weight: 700;
-}
-
-.productInfo{
     display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.productQuantity{
-    display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
     justify-content: center;
-    width: 50px;
-    height: 148px;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 1px #000000 solid;
-    
-}
-.productQuantity button{
-    border: none;
-    background-color: #ddf2dd;
 }
 
-.cartTotal{
+.checkOut{
     width: 80%;
     background-color: #ffffff;
-    border: 1px #000000 solid;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    margin-top: 80px;
-    margin-bottom: 70px;
-}
-.cartTotal button{
-    font-size: 1.3rem;
-    padding: 15px;
-    padding-inline: 30px;
-    color: #ffffff;
     border: 1px #000000 solid;
     border-radius: 15px;
-    background-color: #445944;
+    padding: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+}
+.paymentMethods{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.paymentMethodsCard{
+    background-color: #f1f4f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    height: 65px;
+    border: 1px #000000 solid;
+    border-radius: 15px;
+    width: 320px;
+}
+.paymentMethodsCard h1{
+    font-size: 1.4rem;
+}
+.paymentMethodsCard img{
+    width: 55px;
 }
 
+.paymentMethodsCard.selected{
+    background-color: #89b289;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    height: 65px;
+    border: 1px #000000 solid;
+    border-radius: 15px;
+    width: 320px;
+}
+
+#btnCompra:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.infosPrice{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.infos button{
+    color: #ffffff;
+    background-color: #445944;
+    font-size: 1.6rem;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.price{
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 300px auto;
+}
 
 /* DAQUI PARA BAIXO É O FOOTER GLOBAL PARA TODAS AS PÁGINAS */
 

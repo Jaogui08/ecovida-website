@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoVida - Shopping Cart</title>
-    <link rel="stylesheet" href="../css/carrinho.css">
+    <title>EcoVida - Check Out</title>
+    <link rel="stylesheet" href="../css/pagamento.css">
     
 </head>
 <body style="background-color: #f1f4f0;">
     <nav>
         <div class="logo">
-            <a href="">
+            <a href="../pages/home.html">
                 <img src="../img/logo.png" style="height: 111px; width: 111px;">
             </a>
             <div class="search">
@@ -34,24 +34,42 @@
         </div> 
     </nav>
 
-    <section class="cartContainer">
-        <div class="cartTitle">
-            <h1>Produto</h1>
-            <h1>Preço Un.</h1>
-            <h1>Preço Frete</h1>
-            <h1>Quant.</h1>
-            <h1>Ações</h1>
-        </div>
-
-        <div style="width: 80%;" class="cartProductContainer">
-            
-        </div>
-
-        <div class="cartTotal">
-            <h1>Total: <span style="color: #678567;">R$ <span id="total">0,00</span></span></h1>
-            <a href="pagamento.html" style="text-decoration: none; cursor: pointer;">
-                <button>Ir para o pagamento</button>
-            </a>
+    <section>
+        <div class="checkOut">
+            <div class="payment">
+                <h1 style="font-size: 2.5rem; margin-bottom: 35px;">Selecione o método de pagamento</h1>
+                <div class="paymentMethods">
+                    <div class="paymentMethodsCard">
+                        <h1>Cartão de Crédito</h1>
+                        <img src="../img/mastercard.png">
+                    </div>
+                    <div class="paymentMethodsCard">
+                        <h1>Cartão de Débito</h1>
+                        <img src="../img/visa.png">
+                    </div>
+                    <div class="paymentMethodsCard">
+                        <h1>PIX</h1>
+                        <img src="../img/pix.png">
+                    </div>
+                </div>
+            </div>
+            <div class="infos">
+                <div class="infosPrice">
+                    <div class="price">
+                        <h1>Total produtos:</h1>
+                        <h1 style="color: #678567; font-style: italic;">R$ <span id="totalProdutos">0,00</span></h1>
+                    </div>
+                    <div class="price">
+                        <h1>Total frete:</h1>
+                        <h1 style="color: #678567; font-style: italic;">R$ <span id="totalFrete">0,00</span></h1>
+                    </div>
+                    <div class="price">
+                        <h1>Total geral:</h1>
+                        <h1 style="color: #678567; font-style: italic;">R$ <span id="totalGeral">0,00</span></h1>
+                    </div>
+                </div>
+                <button id="btnCompra">Finalizar compra</button>
+            </div>
         </div>
     </section>
 
@@ -78,6 +96,7 @@
         <img style="width: 120px; margin-bottom: 20px; margin-top: 20px;" src="../img/logo.png">
     </footer>
 
-    <script src="../js/carrinho.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/pagamento.js"></script>
 </body>
 </html>
