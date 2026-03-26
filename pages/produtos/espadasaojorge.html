@@ -22,13 +22,13 @@
             <button>
                 <img src="../../img/dark-mode.png">
             </button>
-            <a href="">
+            <a href="../carrinho.html">
                 <img src="../../img/shop-cart.png">
             </a>
             <a href="">
                 <img src="../../img/user-photo.png" style="width: 60px;">
             </a>
-            <a href="login.html">
+            <a href="../login.html">
                 <img src="../../img/logout.png">
             </a>
         </div> 
@@ -37,29 +37,34 @@
     <section class="productContainer">
         <section class="product">
             <img src="../../img/produtos/espada-de-sao-jorge.png" style="width: 380px; border-radius: 10px; border: 1px #000000 solid;">
-            <div class="productInfo" style="padding-top: 10px; padding-bottom: 10px;">
+            <div class="productInfo" style="padding-top: 10px; padding-bottom: 10px;"
+                data-preco="64.90"
+                data-frete="15.00">
                 <h1 style="font-size: 2.6rem; height: 110px;">Espada de São Jorge</h1>
                 <div class="price">
-                    <h2>R$ <span>64,90</span></h2>
+                    <h2>R$ <span id="preco">64,90</span></h2>
                 </div>
 
                 <h1 style="font-size: 2.3rem; margin-top: 15px;">Frete</h1>
-                <h2 style="color: #678567; font-size: 2rem; margin-top: 10px;">R$ <span>15,00</span></h2>
+                <h2 style="color: #678567; font-size: 2rem; margin-top: 10px;">R$ <span id="frete">15,00</span></h2>
 
                 <div class="quantity">
                     <div class="quantityButton">
-                        <button style="padding: 10px; border-right: 1px #000000 solid;">
+                        <button type="button" id="btnMenos" style="padding: 10px; border-right: 1px #000000 solid; cursor: pointer;">
                             <img style="width: 30px;" src="../../img/subtract.png">
                         </button>
-                        <h1 style="padding-inline: 10px; color: #678567;">1</h1>
-                        <button style="padding: 10px; border-left: 1px #000000 solid;">
+                        <h1 style="padding-inline: 10px; color: #678567;" id="quantidade">1</h1>
+                        <button type="button" id="btnMais" style="padding: 10px; border-left: 1px #000000 solid; cursor: pointer;">
                             <img style="width: 30px;" src="../../img/add.png">
                         </button>
                     </div>
                     <h1>Quantidade</h1>
                 </div>
 
-                <button class="cart">
+                <button type="button" class="cart"
+                    data-nome="Espada de São Jorge"
+                    data-preco="64.90"
+                    data-imagem="../../img/produtos/espada-de-sao-jorge.png">
                     <img style="width: 40px;" src="../../img/shop-cart.png">
                     <h1 style="font-size: 1.5rem;">Adicionar ao carrinho</h1>
                 </button>
@@ -114,6 +119,7 @@
         <img style="width: 120px; margin-bottom: 20px; margin-top: 20px;" src="../../img/logo.png">
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../../js/produtos.js"></script>
 </body>
 </html>

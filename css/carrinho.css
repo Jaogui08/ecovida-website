@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,97 +41,25 @@ nav{
 
 /* DAQUI PARA CIMA É A NAV GLOBAL PARA TODAS AS PÁGINAS */
 
-.productContainer{
+.cartContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.product{
-    margin-top: 50px;
-    background-color: #ffffff;
-    width: 70%;
-    border-radius: 10px;
-    border: 1px #000000 solid;
-    padding: 40px;
-    padding-inline: 80px;
-    display: flex;
-    gap: 120px;
-}
-.price{
-    background-color: #eff5ef;
-    color: #678567;
-    font-size: 1.5rem;
-    padding: 15px;
-    width: 600px;
-    border: 1px #000000 solid;
-    border-radius: 10px;
-}
-
-.quantity{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 30px;
-}
-.quantityButton{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;
-    overflow: hidden;
-    border-radius: 10px;
-    border: 1px #000000 solid;
-    
-}
-.quantityButton button{
-    border: none;
+.cartTitle{
     background-color: #ddf2dd;
-}
-
-.cart{
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    padding-inline: 25px;
-    background-color: #ddf2dd;
-    border: none;
-    border-radius: 15px;
-    gap: 20px;
-    cursor: pointer;
-}
-
-.productDescription{
-    width: 70%;
-    margin-top: 50px;
-    background-color: #ffffff;
-    border-radius: 10px;
+    height: 80px;
+    width: 80%;
+    margin-top: 70px;
     border: 1px #000000 solid;
-    padding: 20px;
-    margin-bottom: 50px;
-}
-
-.detailTitle{
-    background-color: #ddf2dd;
-    padding: 20px;
     border-radius: 10px;
-    border: 1px #000000 solid;
-    margin-bottom: 20px;
-}
-
-.details{
-    padding: 20px;
-    padding-inline: 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-.detailDiv{
+    padding-inline: 20px;
     display: grid;
-    grid-template-columns: 280px 1fr;
-    font-size: 1.3rem;
+    align-items: center;
+    grid-template-columns: 3fr 1fr 1fr 1fr auto;
+    justify-content: space-between;
 }
+
 
 /* DAQUI PARA BAIXO É O FOOTER GLOBAL PARA TODAS AS PÁGINAS */
 
